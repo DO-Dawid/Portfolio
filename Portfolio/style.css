@@ -1,0 +1,337 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: black;
+    color: blanchedalmond;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: overlay;
+}
+.maindiv{
+    width: 80%;
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+    margin: auto;
+}
+.appear {
+    opacity: 1;
+}
+.widthheader{
+    width: 70%;
+    margin:auto;
+    padding-top: 330px;
+    position: relative;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    min-height: 54em;
+    margin-bottom: 70px;
+    background-image: url('images/lucas-benjamin-j4xZjuuj3ws-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#informacja{
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 4;
+    top:35%
+}
+.informacja{
+    color: black;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding-bottom: 40px;
+}
+
+
+
+#menu_icon{
+    display: inline-block;
+    position: fixed;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 3;
+    margin:2em;
+    transition: 0.3s;
+}
+#menu_icon:hover{
+    background-color: rgba(46, 46, 46, 0.9);
+    transition: 0.15s;
+}
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+.menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu-content{
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+    top:25%;
+    text-align: center;
+}
+.menu a{
+    padding: 9px;
+    text-decoration: none;
+    font-size: 3em;
+    color:#646464;
+    display:block;
+    transition: 0.3s;
+}
+.menu a:hover, menu a:focus{
+    color: #e6e6e6
+}
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.change .menu{
+    width: 100%;
+}
+
+
+h1.maintitle{
+    font-size: 5em;
+    margin: auto;
+    text-shadow:0px 0px 20px #000000;
+    transition:0.15s;
+}
+h1.maintitle:hover{
+    text-shadow: 0px 0px 20px #ffffff;
+    transition: 0.15s;
+}
+p.maindesc{
+    font-size: 1.4em;
+    text-shadow:2px 3px 10px #000000
+}
+.mainimage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 14px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(255, 255, 255);
+    border-radius: 14px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(172, 172, 172);
+    border-radius: 14px;
+}
+
+#spacer{
+    width: 100%;
+    height: 400px;
+    background-image: url("images/spacer1.jpg");
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#my_projects, #certificates, #games, #interests, #working_on{
+    width: 100%;
+    float: left;
+}
+
+
+
+/* main css projects*/
+#my_projects{
+    padding-top: 50px;
+}
+#my_projects .header{
+    text-align: center;
+    font-size: 5em;
+    position: relative;
+    z-index: 1;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+.line1, .line2, .line3{
+    width: 24em;
+    height: 1.5em;
+    transition: 0.3s;
+    border-radius: 14px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.line1{
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg) translate(40px, -84px);  
+}
+.line2{
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg) translate(-45px, -76px);
+    margin-top: -11px;
+}
+.line3{
+    margin-top: 150px;
+}
+#triangle2{
+    transform: translate(-120px, 120px);
+}
+#triangle1{
+    transform: translate(0px, 60px);
+}
+#triangle1 .line1, #triangle1 .line2, #triangle1 .line3{
+    animation-name: colors;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+#triangle2 .line1, #triangle2 .line2, #triangle2 .line3{
+    animation-name: colors;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+@keyframes colors {
+    0%  {background-color: rgb(0, 255, 255);}
+    100% {background-color: rgb(255, 0, 255);}
+  }
+
+
+.headline{
+    width: 50%;
+    float: left; 
+    padding-top: 40px;
+    
+}
+.picture{
+    width: 40%;
+    float: left;
+    height: 400px;
+}
+#my_projects .picture img{
+    width: 100%;
+    transition: 1s;
+}
+#my_projects .picture img:hover{
+    transform: scale(1.5);
+}
+.projects{
+    margin-top: 1em;
+    width: 100%;
+    float: left;
+}
+#hidden1, #hidden2{
+    display: none; 
+}
+.headline h1, .headline p, .headline .btn{
+    width: 80%;
+    margin:auto;
+}
+#my_projects .headline h1{
+    font-size: 44px;
+}
+#my_projects .short{
+    font-size: 19px;
+}
+.more_text{
+    font-size: 24px;
+}
+.learnmore{
+    background-color: aqua;
+    border: none;
+    border-radius: 14px;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 1s;
+    font-size: 1em;
+    font-weight: bold;
+}
+.learnmore:hover{
+    background-color: rgb(255, 0, 255);
+    color: azure;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.more{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 4;
+}
+.more-content{
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+    top:25%;
+    margin-top: -40px;
+    text-align: center;
+}
+.more-content img{
+    height: 400px;
+}
+.change .more{
+    width: 100%;
+}
+#gallery img, #gallery1 img, #gallery2 img, #gallery3 img, #gallery4 img, #gallery5 img, #gallery6 img, #gallery7 img{
+    width: 20%;
+    height: auto;
+    transition: 1s;
+    
+}
+#gallery img:hover, #gallery1 img:hover, #gallery2 img:hover, #gallery3 img:hover, #gallery4 img:hover, #gallery5 img:hover, #gallery6 img:hover, #gallery7 img:hover{
+    transform: scale(1.5);
+}
+.gallery_change{
+    transform: scale(5);
+}
+
+
+/*css main certificates*/

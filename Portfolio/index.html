@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My portfolio</title>
+</head>
+<body>
+    <header>
+        <div id="informacja">
+            <div class="informacja">
+                <p>Strona w trakcie tworzenia!</p>
+                <button onclick="hideInformation(getElementById('informacja'))" class="learnmore">X</button>
+            </div>
+        </div>
+        <div id="menu_icon" onclick="extendMenu(document.getElementById('menu_icon'), document.getElementById('menu'))">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="menu">
+            <div class="menu">
+                <div class="menu-content" onclick="extendMenu(document.getElementById('menu_icon'), document.getElementById('menu'))">
+                    <a href="">Start</a>
+                    <a href="#my_projects">Moje projekty</a>
+                    <a href="#certificates">Osiągnięcia / Certyfikaty</a>
+                    <a href="#games">Gry</a>
+                    <a href="#interests">Zainteresowania</a>
+                    <a href="#working_on">Aktualnie pracuje nad</a>
+                </div>
+            </div>
+        </div>
+        <img src="images/nakładka.png" alt="DODATEK" class="mainimage">
+        <div class="widthheader">
+            <h1 class="maintitle">
+                Moje portfolio
+            </h1>
+            <p class="maindesc">
+                Witaj
+                Nazywam się <u>Dawid</u>, jestem Junior back-end Developerem po wyspecjalizowanych kursach, oraz samokształcącym się front-end developerem.
+                Strona głównie skupiona na moim doświadczeniu oraz zdolnościach.
+                Zapraszam do zapoznania się z każdymi z poniższych informacji, oraz zachęcam do przeanalizowania kodu strony.
+            </p>
+        </div>
+    </header>
+    <!-- moje projekty-->
+    <div id="my_projects">
+        <div class="maindiv">
+            <div id="triangle1">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div id="triangle2">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <h1 class="header">Ukończone projekty</h1>
+            <div class="projects">
+                <div class="picture carblog">
+                    <img src="images/carblog.jpg" alt="carblog">
+                </div>
+                <div class="headline">
+                    <h1>
+                        Blog samochodowy
+                    </h1>
+                    <br>
+                    <p class="short">
+                        Blog samochodowy powstał jako zakończenie kursu szkoły Coderslab, Junior Python Back-end developer. Jest on podsumowującym sprawdzeniem wiedzy zdobytej na szkoleniach. 
+                    </p>
+                    <div class="btn">
+                        <button onclick="pokazUkryj1(document.getElementById('more'))" class="learnmore">Zobacz więcej</button>
+                    </div>
+                    <div id="more">
+                        <div class="more">
+                            <div class="more-content">
+                                <p class="more_text">
+                                    Blog samochodowy powstał jako zakończenie kursu szkoły Coderslab, Junior Python Back-end developer. Jest on podsumowującym sprawdzeniem wiedzy zdobytej na szkoleniach. Jako iż kursy Back-end wiążą sięgłównie z bazami danych, strona posiada takowe połączenie. W bazie danych przechowywane są takie dane jak konta użytkowników, posty, oceny samochodów jak i polubienia lub komentarze.
+                                    Baza danych zawiera również szyfrowanie haseł by te nie wpadły w niepowołane ręce. Do strony dodałem również możliwość edytowania swoich postów jak i komentarzy, a każdy użytkownik ma wzgląd w swojąaktywność na stronie. 
+                                    Zaliczenie kursu uwzględniało również napisanie własnych testów do sprawdzenia poprawności działania owej strony. Jako iż nie posiadałem w tamtym czasie specjalnie rozwiniętych zdolności front-endowych strona nie wygląda najatrakcyjniej.
+                                </p>
+                                <div id="gallery">
+                                    <img onclick="galleryFunction(document.getElementById('gallery'))" src="images/carblog.jpg" alt="carblog">
+                                </div>
+                                <div id="gallery1">
+                                    <img onclick="galleryFunction(document.getElementById('gallery1'))" src="images/carblog.jpg" alt="carblog">
+                                </div>
+                                <div id="gallery2">
+                                    <img onclick="galleryFunction(document.getElementById('gallery2'))" src="images/carblog.jpg" alt="carblog">
+                                </div>
+                                <div id="gallery3">
+                                    <img onclick="galleryFunction(document.getElementById('gallery3'))" src="images/carblog.jpg" alt="carblog">
+                                </div>
+                                <div id="gallery4">
+                                    <img onclick="galleryFunction(document.getElementById('gallery4'))" src="images/carblog.jpg" alt="carblog">
+                                </div>
+                                <div id="gallery5">
+                                    <img onclick="galleryFunction(document.getElementById('gallery5'))" src="images/carblog.jpg" alt="carblog">
+                                </div>
+                                <div id="gallery6">
+                                    <img onclick="galleryFunction(document.getElementById('gallery6'))" src="images/carblog.jpg" alt="carblog">
+                                </div>
+                                <div id="gallery7">
+                                    <img onclick="galleryFunction(document.getElementById('gallery7'))" src="images/carblog.jpg" alt="carblog">
+                                </div>
+                                <div class="btn">
+                                    <button onclick="pokazUkryj1(document.getElementById('more'))" class="learnmore">Mniej</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maindiv">
+            <div class="projects">
+                <div class="picture carfactor">
+                    <img src="images/carfactor.jpg" alt="carfactor">
+                </div>
+                <div class="headline">
+                    <h1>
+                        Car factor
+                    </h1>
+                    <br>
+                    <p>
+                        Car factor jest stroną pokazującą mój rozwój front-endowy.
+                    </p>
+                    <div class="btn">
+                        <button onclick="pokazUkryj1(document.getElementById('more2'))" class="learnmore">Zobacz więcej</button>
+                    </div>
+                    <div id="more2">
+                        <div class="more">
+                            <div class="more-content">
+                                <p class="more_text">
+                                    Car factor jest stroną pokazującą mój rozwój front-endowy. Główny nacisk jest tu kładziony na wygląd. W stronie użyłem javascript do chociażby przyczepienia menu u góry strony, po zjechaniu poza jego widoczność.
+                                </p>
+                                <div class="btn">
+                                    <button onclick="pokazUkryj1(document.getElementById('more2'))" class="learnmore">Mniej</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="spacer">
+    </div>
+    <!-- osiągnięcia / certyfikaty -->
+    <div id="certificates">
+        <div class="maindiv">
+            <h1 class="header">Kursy / osiągnięcia związane z programowaniem</h1>
+            <div class="certificates">
+                <h1>
+                    Kurs "Python Developer"
+                </h1>
+                <h4>
+                    <b>Organizator: </b>Coderslab <br>
+                    <b>Data ukończenia: </b>01.2021
+                </h4>
+                <p>
+                    <!-- Dodać link do projektu -->
+                    Kurs zawierał 240 godzin wykładów oraz zajęć praktycznych z wykładowcą i obejmował zakres wiedzy wymagany na stanowisku Junior Back-end Developer.
+                    Kursy zakończone zostały projektem sprawdzającym zdobytą wiedzę.
+                </p>
+            </div>
+        </div>
+        <div class="maindiv">
+            <div class="certificates">
+                <h1>
+                    Świadectwo potwierdzające kwalifikacje w zawodzie
+                </h1>
+                <h4>
+                    <b>Organizator: </b>Okręgowa Komisja Egzaminacyjna w Łodzi<br>
+                    <b>Data ukończenia: </b>08.2020
+                </h4>
+                <p>
+                    EE.08 Montaż i eksploatacja systemów komputerowych, urządzeń peryferyjnych i sieci wyodrębnionej w zawodzie Technik Informatyk
+                </p>
+            </div>
+        </div>
+        <div class="maindiv">
+            <h1>Inne kursy / osiągnięcia</h1>
+            <div class="certificates">
+                <h1>
+                    Szkolenie " Administracja sieciowymi systemami operacyjnymi I i II"
+                </h1>
+                <h4>
+                    <b>Data ukończenia: </b>11.2020
+                </h4>
+                <p>
+                    Szkolenie głównie obejmowało pracę nad serwerami. W tą pracę wchodziło:
+                    <ul>
+                        <li>Tworzenie serwerów</li>
+                        <li>Zarządzanie serwerami, dopasowywanie ich do własnych potrzeb</li>
+                        <li>Testowanie założonego serwera na różnych komputerach</li>
+                    </ul> 
+                </p>
+            </div>
+        </div>
+        <div class="maindiv">
+            <div class="certificates">
+                <h1>
+                    Świadectwo Kwalifikacyjne
+                </h1>
+                <h4>
+                    <b>Organizator: </b>Stowarzyszenie Inżynierów i Techników Przemysłu Chemicznego w Łodzi<br>
+                    <b>Data ukończenia: </b>04.2021
+                </h4>
+                <p>
+                    Uprawniające do zajmowania się eksploatacją urządzeń, instalacji i sieci na stabnowisku EKSPLOATACJI w zakresie:
+                    <ul>
+                        <li>obsługi,</li>
+                        <li>konserwacji,</li>
+                        <li>remontów,</li>
+                        <li>montażu,</li>
+                        <li>prac kontrolno - pomiarowych.</li>
+                    </ul>
+                    Dla następujących urządzeń, instalacji sieci:
+                    <ul>
+                        <li>Grupa 1.</li>
+                        <li>Do 1kV</li>
+                    </ul>
+                    Świadectwo wystawione po dokładnym sprawdzzeniu wiedzy z danego tematu. <br>
+                    Przed testem sprawdzającym wiedzę, zorganizowane były kursy, dzięki którym posiadłem wiedzę na temat zagrożeń pracy z prądem. Nauczyłem się również sposobów zapobiegania wypadkom, oraz sposobie w jakim dana praca związana z typowo prądem powinna wyglądać.
+                </p>
+            </div>
+        </div>
+        <div class="maindiv">
+            <div class="certificates">
+                <h1>
+                    Kurs "Nowoczesne metody montażu, konserwacji i napraw pakietów oraz komponentów elektronicznych występujących we współczesnych urządzeniach techniki komputerowej - IPC"
+                </h1>
+                <h4>
+                    <b>Organizator: </b>RENEX EEC<br>
+                    <b>Data ukończenia: </b>09.2020
+                </h4>
+                <p>
+                    Kurs na temat wiedzy głównie elektronicznej. 
+                    <ul>
+                        <li><b>Na kursach teoretycznych</b> omawialiśmy głównie typy podzespołów, sposoby ich lutowania, nauczyliśmy się określać jakość lutowania. Nauczyliśmy się również różnych rodzaji napięć mogących zaszkodzić danym komponentom lub płytkom drukowanym</li>
+                        <li><b>Na kursach praktycznych</b> otrzymaliśmy dostęp do wyspecjalizowanych stanowisk lutującychz wyposażonych w niezbędne narzędzia oraz materiały lutownicze. Podczas kursów naszym zadaniem było lutowanie różnorakich komponentów.</li>
+                    </ul>
+                    Kurs praktyczny jak i teoretyczny zakończone były testami sprawdzającymi wiedzę.
+                </p>
+            </div>
+        </div>
+        <div class="maindiv">
+            <div class="certificates">
+                <h1>
+                    Kurs "Ochrona przed elektrycznością statyczną, a stanowiska monterskie do naprawy zestawu komputerowego - ESD"
+                </h1>
+                <h4>
+                    <b>Organizator: </b>RENEX EEC<br>
+                    <b>Data ukończenia: </b>05.2020
+                </h4>
+                <p>
+                    Kurs obejmował ogólne zagrożenia związane z elektrostatycznością przy podzespoołach elektronicznych (np. płytkach drukowanych). Kurs nauczył mnie również jak zapobiegać takowym zagrożeniom.<br>
+                    Zakończony testem sprawdzającym wiedzę
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="spacer">
+    </div>
+    <!--games-->
+    <div id="games">
+        <div class="maindiv">
+            <h1 class="header">Tworzenie gier</h1>
+            <div class="games">
+                <p>Jako gracz, w przyszłości planuję zacząć tworzyć gry. Projekty będą pojawiać się w tej zakładce.</p>
+            </div>
+        </div>
+    </div>
+    <div id="spacer">
+    </div>
+    <!-- zainteresowania -->
+    <div id="interests">
+        <div class="maindiv">
+            <h1 class="header">Moje zainteresowania</h1>
+            <div class="interests">
+                <h1>Programowanie</h1>
+                <p>Jednym z moich głównych zainteresowań jest programowanie, które każdego dnia staram się udoskonalać. Programowanie jest dla mnie bardziej przyjemnością niż koniecznością, z chęcią uczę się nowych technik jak i sposobów. </p>
+            </div>
+        </div>
+        <div class="maindiv">
+            <div class="interests">
+                <h1>Naprawa oraz składanie komputerów</h1>
+                <p>Składanie czy naprawa komputerów jest dla mnie jedną z większych przejmości, przy której mogę się wyciszyć. Lubię w tym również sam fakt znajdowania problemu, gdzie przydaje się planowe działanie z głównym punktem "GDZIE LEŻY PROBLEM"</p>
+            </div>
+        </div>
+    </div>
+    <div id="spacer">
+    </div>
+    <!-- czym aktualnie się zajmuje -->
+    <div id="working_on">
+        <div class="maindiv">
+            <h1 class="header">Projekt nad którym aktualnie pracuje</h1>
+            <div class="workingon">
+                <h1>SALI</h1>
+                <p>SALI to sklep, w którym można zakupić u mnie stronę internetową lub zestaw komputerowy. W stronie uwzględnione będą takie rzeczy jak:
+                    <ul>
+                        <li>logowanie</li>
+                        <li>koszyk</li>
+                        <li>profil użytkownika z jego danymi</li>
+                        <li>koszyk przechowujący wybrane produkty</li>
+                    </ul>
+                    Do stworzenia takowej strony niezbędne jest połączenie z bazą danych jak i kod pozwalający na wszystkie akcje na stronie, oraz zapisywanie danych zamówień.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
